@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TAK LINE 16 — Enterprise Network Intelligence &amp; Infrastructure Appliance</title>
+<meta name="description" content="TAK LINE 16 is a concept 16-channel network intelligence appliance: device discovery, real-time traffic analytics, diagnostics and centralized channel management for mission-critical infrastructure." />
+<meta name="theme-color" content="#050608" />
+<meta name="color-scheme" content="dark" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<noscript><style>[data-reveal]{opacity:1 !important;transform:none !important}.chip{opacity:1 !important}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="bg-layers" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--a"></div>
+  <div class="bg-glow bg-glow--b"></div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="TAK LINE 16 — home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M16 2.8 29.2 27.2H2.8L16 2.8Z" stroke="currentColor" stroke-width="1.3" opacity=".85"/>
+          <path d="M16 7.6 24.6 23.4H7.4L16 7.6Z" stroke="currentColor" stroke-width="1.1" opacity=".35"/>
+          <path d="M11.2 13.6h9.6M16 13.6v7.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <strong>TAK LINE 16</strong>
+        <em>16 CHANNELS LINE UNIT</em>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#technology">Technology</a>
+      <a href="#dashboard">Features</a>
+      <a href="#specifications">Specifications</a>
+      <a href="#security">Security</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="#dashboard">Explore the System</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__spot" id="heroSpot" aria-hidden="true"></div>
+
+    <svg class="hero__net" viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g stroke="#087CFF" stroke-width="1" fill="none" opacity=".35">
+        <path class="net-line" d="M720 620 L120 300"/>
+        <path class="net-line" d="M720 620 L300 120"/>
+        <path class="net-line" d="M720 620 L720 60"/>
+        <path class="net-line" d="M720 620 L1140 120"/>
+        <path class="net-line" d="M720 620 L1320 300"/>
+        <path class="net-line net-line--slow" d="M40 520 L420 640 L720 620"/>
+        <path class="net-line net-line--slow" d="M1400 520 L1020 640 L720 620"/>
+      </g>
+      <g fill="#087CFF" opacity=".55">
+        <circle cx="120" cy="300" r="2.2"/><circle cx="300" cy="120" r="2.2"/>
+        <circle cx="1140" cy="120" r="2.2"/><circle cx="1320" cy="300" r="2.2"/>
+        <circle cx="40" cy="520" r="2.2"/><circle cx="1400" cy="520" r="2.2"/>
+      </g>
+    </svg>
+
+    <div class="container hero__inner">
+      <div class="hero__badge" data-reveal>
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>16-Channel Network Intelligence Appliance</span>
+        <span class="hero__badge-sep" aria-hidden="true"></span>
+        <span class="mono">CONCEPT PROTOTYPE</span>
+      </div>
+
+      <h1 class="hero__title" data-reveal style="--d:.08s">
+        THE FUTURE OF<br />
+        <span class="grad-text">NETWORK INTELLIGENCE.</span>
+      </h1>
+
+      <p class="hero__sub" data-reveal style="--d:.16s">
+        One intelligent infrastructure. Sixteen independent channels.
+        Complete visibility across your network.
+      </p>
+
+      <div class="hero__actions" data-reveal style="--d:.24s">
+        <a class="btn btn--primary" href="#overview">
+          Explore TAK LINE 16
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#specifications">View Technical Specifications</a>
+      </div>
+    </div>
+
+    <div class="container hero__stage-wrap">
+      <div class="hero__stage" data-reveal style="--d:.3s">
+        <div class="hero__stage-glow" aria-hidden="true"></div>
+        <img class="hero__img" src="assets/tak-line-16-front.png"
+             alt="TAK LINE 16 front elevation: sixteen-channel interface, integrated status display, management and console ports"
+             width="1536" height="860" fetchpriority="high" decoding="async" />
+        <span class="chip chip--a"><em>CHANNEL FABRIC</em><b>16 &times; 10G</b></span>
+        <span class="chip chip--b"><em>MANAGEMENT PLANE</em><b>TLS 1.3 / mTLS</b></span>
+        <span class="chip chip--c"><em>ON-DEVICE CONSOLE</em><b>3.2&Prime; STATUS</b></span>
+      </div>
+    </div>
+
+    <div class="container">
+      <dl class="hero__meta">
+        <div><dt>Channels</dt><dd>16</dd></div>
+        <div><dt>Aggregate fabric</dt><dd>640 Gb/s</dd></div>
+        <div><dt>Telemetry resolution</dt><dd>1 s</dd></div>
+        <div><dt>Target availability</dt><dd>99.99%</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>NETWORK DISCOVERY</span><i></i><span>TRAFFIC ANALYTICS</span><i></i><span>FAULT DETECTION</span><i></i><span>CENTRALIZED CONFIGURATION</span><i></i><span>SYSTEM HEALTH</span><i></i><span>DIAGNOSTICS</span><i></i><span>16 INDEPENDENT CHANNELS</span><i></i>
+      <span>NETWORK DISCOVERY</span><i></i><span>TRAFFIC ANALYTICS</span><i></i><span>FAULT DETECTION</span><i></i><span>CENTRALIZED CONFIGURATION</span><i></i><span>SYSTEM HEALTH</span><i></i><span>DIAGNOSTICS</span><i></i><span>16 INDEPENDENT CHANNELS</span><i></i>
+    </div>
+  </div>
+
+  <!-- ============ OVERVIEW ============ -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal><span>01</span> Overview</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">Engineered for<br />Mission-Critical Infrastructure.</h2>
+        <p class="sec-lead" data-reveal style="--d:.12s">
+          TAK LINE 16 consolidates network discovery, traffic intelligence and infrastructure
+          diagnostics into a single rack-mounted appliance. Sixteen physically independent
+          channels are monitored, configured and audited from one console — so operators
+          observe the entire estate instead of stitching together a dozen partial views.
+        </p>
+      </div>
+
+      <div class="overview">
+        <div class="gallery" data-reveal>
+          <div class="gallery__frame" data-gallery>
+            <img class="gallery__img is-active" src="assets/tak-line-16-angle.png"
+                 alt="TAK LINE 16 three-quarter view showing the channel status display, control cluster and link indicators"
+                 width="1536" height="860" loading="lazy" decoding="async" />
+            <img class="gallery__img" src="assets/tak-line-16-front.png"
+                 alt="TAK LINE 16 front elevation showing all sixteen line interfaces and management ports"
+                 width="1536" height="860" loading="lazy" decoding="async" />
+            <div class="gallery__hud" aria-hidden="true">
+              <span class="mono">TAK LINE 16</span>
+              <span class="mono dim" data-gallery-label>THREE-QUARTER VIEW</span>
+            </div>
+          </div>
+          <div class="gallery__tabs" role="tablist" aria-label="Product views">
+            <button class="gallery__tab is-active" role="tab" aria-selected="true" data-view="0">Three-quarter</button>
+            <button class="gallery__tab" role="tab" aria-selected="false" data-view="1">Front elevation</button>
+          </div>
+        </div>
+
+        <div class="overview__copy">
+          <p data-reveal>
+            A 2U chassis houses sixteen line interfaces, a dedicated telemetry path and an
+            isolated management plane. Each channel keeps its own buffer, policy scope and
+            event stream, so a fault or configuration change on one segment never degrades
+            visibility on another.
+          </p>
+          <p data-reveal style="--d:.06s">
+            The appliance is designed around a simple operating principle: observe first,
+            decide second. Discovery, baselining and anomaly detection run continuously;
+            configuration changes are staged, signed and reversible.
+          </p>
+          <ul class="cap-list">
+            <li data-reveal style="--d:.1s">
+              <span class="cap-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h4l2.5-5 3 10 2.5-5h6"/></svg>
+              </span>
+              <div>
+                <h3>Network Intelligence</h3>
+                <p>Continuous topology discovery, device fingerprinting and behavioural baselining across every monitored segment.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:.16s">
+              <span class="cap-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 4l9 5.5"/><path d="M5 11v8M9.5 11v8M14.5 11v8M19 11v8"/><path d="M3 20h18"/></svg>
+              </span>
+              <div>
+                <h3>Financial Infrastructure Monitoring</h3>
+                <p>Availability, latency and session-count observation for approved transaction endpoints — metadata only, never credentials or card data.</p>
+              </div>
+            </li>
+            <li data-reveal style="--d:.22s">
+              <span class="cap-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+              </span>
+              <div>
+                <h3>Centralized Channel Management</h3>
+                <p>One policy model, sixteen execution points. Roll out, compare and roll back configuration from a single authoritative console.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNOLOGY ============ -->
+  <section class="section section--alt" id="technology">
+    <div class="container">
+      <div class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow" data-reveal><span>02</span> Technology</p>
+          <h2 class="sec-title" data-reveal style="--d:.06s">Core Technology</h2>
+        </div>
+        <p class="sec-lead" data-reveal style="--d:.12s">
+          Six subsystems, one deterministic data path. Every layer is instrumented,
+          every state change is attributable, and nothing depends on a cloud control plane
+          to remain observable.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="4.5" height="4.5" rx="1"/><rect x="9.75" y="4" width="4.5" height="4.5" rx="1"/><rect x="16.5" y="4" width="4.5" height="4.5" rx="1"/><rect x="3" y="15.5" width="4.5" height="4.5" rx="1"/><rect x="9.75" y="15.5" width="4.5" height="4.5" rx="1"/><rect x="16.5" y="15.5" width="4.5" height="4.5" rx="1"/><path d="M12 8.5v7"/></svg>
+          </span>
+          <h3>16-Channel Network Architecture</h3>
+          <p>Sixteen isolated monitoring domains with dedicated buffering and independent policy scope. Cross-channel contention is structurally impossible.</p>
+          <span class="card__tag mono">ISOLATED DOMAINS</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:.06s">
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/><path d="M11 7.5v7M7.5 11h7"/></svg>
+          </span>
+          <h3>Intelligent Device Discovery</h3>
+          <p>Layer 2 and Layer 3 topology mapping with vendor and model fingerprinting for up to 4,096 concurrent endpoints.</p>
+          <span class="card__tag mono">L2 / L3 TOPOLOGY</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:.12s">
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17.5 8 10l4 4.5L16.5 6 21 12.5"/><path d="M3 21h18"/></svg>
+          </span>
+          <h3>Real-Time Traffic Analytics</h3>
+          <p>Per-channel flow accounting at one-second resolution, with thirty days of on-device retention and exportable baselines.</p>
+          <span class="card__tag mono">1 S GRANULARITY</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:.18s">
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h11M19 17h1"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+          </span>
+          <h3>Secure Network Configuration</h3>
+          <p>Signed configuration profiles, staged deployment and one-step rollback, with a full change ledger per interface.</p>
+          <span class="card__tag mono">SIGNED PROFILES</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:.24s">
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 20 6.5v5.6c0 4.3-3.3 7.4-8 8.4-4.7-1-8-4.1-8-8.4V6.5l8-3Z"/><path d="M8.5 12h2l1.5-3 2 5.5 1.2-2.5h1.8"/></svg>
+          </span>
+          <h3>Financial Infrastructure Monitoring</h3>
+          <p>Read-only observation of authorized transaction telemetry: endpoint availability, session counts and response latency.</p>
+          <span class="card__tag mono">METADATA ONLY</span>
+        </article>
+
+        <article class="card" data-reveal style="--d:.3s">
+          <span class="card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 9.5h2.5l1.5 3.5 2-6 1.5 4h2.5"/><path d="M9 21h6"/></svg>
+          </span>
+          <h3>Advanced System Diagnostics</h3>
+          <p>Continuous self-test across fabric, optics, thermal and power domains, with guided fault isolation and pre-failure alerting.</p>
+          <span class="card__tag mono">CONTINUOUS SELF-TEST</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="section" id="dashboard">
+    <div class="container">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal><span>03</span> System</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">Interactive System Console</h2>
+        <p class="sec-lead" data-reveal style="--d:.12s">
+          A working front-end simulation of the TAK LINE 16 management plane. Select any
+          channel to isolate its telemetry, or pause the feed to inspect a moment in time.
+        </p>
+      </div>
+
+      <div class="console" data-reveal>
+        <div class="console__bar">
+          <div class="console__id">
+            <span class="dot dot--ok" aria-hidden="true"></span>
+            <span class="mono">TAK-L16-0042</span>
+            <span class="console__sep" aria-hidden="true"></span>
+            <span class="mono dim">SIMULATED TELEMETRY</span>
+          </div>
+          <div class="console__tools">
+            <button class="tool is-on" id="liveToggle" aria-pressed="true">
+              <span class="dot dot--ok" aria-hidden="true"></span><span class="tool__label">Live</span>
+            </button>
+            <button class="tool" id="resetChannels">All channels</button>
+          </div>
+        </div>
+
+        <div class="console__grid">
+          <section class="panel p-channels" aria-label="Channel status">
+            <div class="panel__head">
+              <h3>Channel Status</h3>
+              <span class="mono dim" id="chSummary">16 / 16 online</span>
+            </div>
+            <div class="ch-grid" id="chGrid"></div>
+            <p class="panel__foot mono">Select a channel to isolate telemetry</p>
+          </section>
+
+          <section class="panel p-traffic" aria-label="Real-time traffic">
+            <div class="panel__head">
+              <h3>Real-Time Traffic <span class="dim mono" id="trafficScope">· ALL CHANNELS</span></h3>
+              <div class="legend">
+                <span class="lg lg--rx"><i></i>RX</span>
+                <span class="lg lg--tx"><i></i>TX</span>
+              </div>
+            </div>
+            <div class="traffic__readout">
+              <div><span class="mono val" id="rxNow">0.00</span><span class="mono dim">Gb/s ingress</span></div>
+              <div><span class="mono val val--tx" id="txNow">0.00</span><span class="mono dim">Gb/s egress</span></div>
+              <div><span class="mono val" id="pktNow">0</span><span class="mono dim">pps × 10³</span></div>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="trafficChart" aria-label="Simulated ingress and egress traffic over the last 90 seconds" role="img"></canvas>
+            </div>
+          </section>
+
+          <section class="panel p-gauges" aria-label="System resources">
+            <div class="panel__head"><h3>Resources</h3></div>
+            <div class="gauges">
+              <div class="gauge">
+                <svg viewBox="0 0 90 90" aria-hidden="true">
+                  <circle class="gauge__track" cx="45" cy="45" r="36"/>
+                  <circle class="gauge__fill" id="gCpu" cx="45" cy="45" r="36" style="--p:23"/>
+                </svg>
+                <span class="gauge__val mono" id="vCpu">23%</span>
+                <span class="gauge__label mono">CPU</span>
+              </div>
+              <div class="gauge">
+                <svg viewBox="0 0 90 90" aria-hidden="true">
+                  <circle class="gauge__track" cx="45" cy="45" r="36"/>
+                  <circle class="gauge__fill" id="gMem" cx="45" cy="45" r="36" style="--p:45"/>
+                </svg>
+                <span class="gauge__val mono" id="vMem">45%</span>
+                <span class="gauge__label mono">MEMORY</span>
+              </div>
+              <div class="gauge">
+                <svg viewBox="0 0 90 90" aria-hidden="true">
+                  <circle class="gauge__track" cx="45" cy="45" r="36"/>
+                  <circle class="gauge__fill gauge__fill--temp" id="gTemp" cx="45" cy="45" r="36" style="--p:42"/>
+                </svg>
+                <span class="gauge__val mono" id="vTemp">42&deg;</span>
+                <span class="gauge__label mono">TEMP</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel p-stats" aria-label="System summary">
+            <div class="panel__head"><h3>System Health</h3></div>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat__k mono">NETWORK HEALTH</span>
+                <span class="stat__v mono" id="sHealth">99.98<span>%</span></span>
+              </div>
+              <div class="stat">
+                <span class="stat__k mono">ACTIVE CONNECTIONS</span>
+                <span class="stat__v mono" id="sConns">1,284</span>
+              </div>
+              <div class="stat">
+                <span class="stat__k mono">SYSTEM UPTIME</span>
+                <span class="stat__v mono stat__v--sm" id="sUptime">15d 07:42:19</span>
+              </div>
+              <div class="stat">
+                <span class="stat__k mono">SECURITY STATUS</span>
+                <span class="stat__v mono stat__v--ok" id="sSec">SECURE</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel p-log" aria-label="Event log">
+            <div class="panel__head"><h3>Event Stream</h3><span class="dot dot--ok" aria-hidden="true"></span></div>
+            <ul class="log" id="eventLog" aria-live="off"></ul>
+          </section>
+        </div>
+      </div>
+
+      <p class="console__note mono">
+        All values are fictional sample data generated locally in the browser. TAK LINE 16 is a concept
+        prototype and does not connect to banking systems, payment networks or production infrastructure.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SPECIFICATIONS ============ -->
+  <section class="section section--alt" id="specifications">
+    <div class="container">
+      <div class="sec-head sec-head--split">
+        <div>
+          <p class="eyebrow" data-reveal><span>04</span> Specifications</p>
+          <h2 class="sec-title" data-reveal style="--d:.06s">Technical Specifications</h2>
+        </div>
+        <p class="sec-lead" data-reveal style="--d:.12s">
+          Figures below describe the TAK LINE 16 concept architecture. Items marked
+          <span class="tag tag--inline">Concept</span> are illustrative design parameters;
+          items marked <span class="tag tag--inline">Target</span> are engineering goals
+          for a future build. Neither constitutes a verified capability.
+        </p>
+      </div>
+
+      <div class="spec-wrap" data-reveal>
+        <table class="spec">
+          <caption class="sr-only">TAK LINE 16 conceptual technical specifications</caption>
+          <thead>
+            <tr><th scope="col">Parameter</th><th scope="col">Specification</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Network channels</th><td>16 independent monitoring domains</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Channel interface</th><td>16 &times; 10G SFP+ / RJ-45 combo, 2 &times; 40G uplink</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Aggregate fabric</th><td>640 Gb/s non-blocking telemetry path</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Monitoring resolution</th><td>1-second flow granularity per channel</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Flow retention</th><td>30 days on-device; 12 months with expansion shelf</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Device discovery</th><td>Up to 4,096 concurrent endpoints, L2/L3 topology</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Management plane</th><td>TLS 1.3 with mutual authentication, role-based access</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Configuration model</th><td>Signed profiles, staged rollout, one-step rollback</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Diagnostics</th><td>Continuous self-test with guided fault isolation</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Health domains</th><td>Fabric, optics, thermal, power, storage</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Processing</th><td>16-core control plane, dedicated telemetry pipeline</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Form factor</th><td>2U rack mount — 440 &times; 88 &times; 420 mm</td><td><span class="tag">Concept</span></td></tr>
+            <tr><th scope="row">Power</th><td>Dual redundant 750 W, hot-swap</td><td><span class="tag">Target</span></td></tr>
+            <tr><th scope="row">Operating environment</th><td>0–45 &deg;C, 5–90% RH non-condensing</td><td><span class="tag">Concept</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="spec__note mono" data-reveal>
+        No certification, benchmark or third-party validation is claimed for any parameter above.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SECURITY ============ -->
+  <section class="section" id="security">
+    <div class="container">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal><span>05</span> Security</p>
+        <h2 class="sec-title" data-reveal style="--d:.06s">Security at Every Layer.</h2>
+        <p class="sec-lead" data-reveal style="--d:.12s">
+          Access, transport, configuration and audit are treated as one continuous control
+          surface. Every session is attributable, every change is recorded, and every
+          privilege is explicitly granted rather than inherited.
+        </p>
+      </div>
+
+      <div class="security">
+        <ol class="layers">
+          <li class="layer" data-reveal>
+            <span class="layer__n mono">01</span>
+            <div>
+              <h3>Identity &amp; Access Control</h3>
+              <p>Role-based authorization with hardware-backed key storage. Administrative access requires multi-factor authentication and is scoped per channel group.</p>
+            </div>
+          </li>
+          <li class="layer" data-reveal style="--d:.06s">
+            <span class="layer__n mono">02</span>
+            <div>
+              <h3>Encrypted Management Communication</h3>
+              <p>All management sessions are carried over TLS 1.3 with mutual certificate authentication. Legacy plaintext protocols are not exposed on any interface.</p>
+            </div>
+          </li>
+          <li class="layer" data-reveal style="--d:.12s">
+            <span class="layer__n mono">03</span>
+            <div>
+              <h3>Infrastructure Integrity Monitoring</h3>
+              <p>The running configuration is continuously attested against the signed baseline. Unapproved drift raises an event and can trigger automatic isolation of the affected channel.</p>
+            </div>
+          </li>
+          <li class="layer" data-reveal style="--d:.18s">
+            <span class="layer__n mono">04</span>
+            <div>
+              <h3>Security Event Visibility</h3>
+              <p>Authentication, configuration and link-state events are normalized into a single stream with configurable retention and export to an external collector.</p>
+            </div>
+          </li>
+          <li class="layer" data-reveal style="--d:.24s">
+            <span class="layer__n mono">05</span>
+            <div>
+              <h3>Authorized Operational Access</h3>
+              <p>Least-privilege by default, time-bound elevation for maintenance windows, and a complete audit trail for every command executed on the appliance.</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="security__aside" data-reveal style="--d:.1s">
+          <div class="shield">
+            <svg viewBox="0 0 120 132" fill="none" aria-hidden="true">
+              <path d="M60 4 112 22v42c0 32-21 53-52 64C29 117 8 96 8 64V22L60 4Z" stroke="url(#sg)" stroke-width="1.4"/>
+              <path d="M60 20 98 33v30c0 23-15 39-38 48-23-9-38-25-38-48V33L60 20Z" stroke="#087CFF" stroke-width="1" opacity=".45"/>
+              <path d="M40 66l14 14 27-30" stroke="#3FA9FF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="sg" x1="8" y1="4" x2="112" y2="128" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3FA9FF"/><stop offset="1" stop-color="#087CFF" stop-opacity=".25"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h3>Scope of Claims</h3>
+          <p>
+            TAK LINE 16 is a design concept. No compliance certification — including
+            PCI DSS, ISO 27001 or SOC 2 — is claimed, held or implied. The controls above
+            describe intended architecture, not audited practice.
+          </p>
+          <ul class="tick-list">
+            <li>No credential, PIN or card-data capture</li>
+            <li>No hidden telemetry or outbound callbacks</li>
+            <li>Read-only by default on monitored segments</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACT ============ -->
+  <section class="cta" id="contact">
+    <div class="cta__bg" aria-hidden="true">
+      <img src="assets/tak-line-16-angle.png" alt="" width="1536" height="860" loading="lazy" decoding="async" />
+    </div>
+    <div class="container cta__grid">
+      <div class="cta__copy">
+        <p class="eyebrow" data-reveal><span>06</span> Contact</p>
+        <h2 class="cta__title" data-reveal style="--d:.06s">Take Control of<br />Your Infrastructure.</h2>
+        <p class="cta__lead" data-reveal style="--d:.12s">
+          Request the concept brief, the technical whitepaper or a walkthrough of the
+          management console architecture.
+        </p>
+        <div class="cta__actions" data-reveal style="--d:.18s">
+          <a class="btn btn--primary" href="#overview">
+            Discover TAK LINE 16
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <p class="micro" data-reveal style="--d:.24s">
+          TAK LINE 16 is a fictional product concept developed as a design and engineering
+          demonstration. It is not offered for sale, and no commercial relationship is implied.
+        </p>
+      </div>
+
+      <form class="form" id="inquiryForm" novalidate data-reveal style="--d:.14s">
+        <div class="form__row">
+          <label for="fName">Full name</label>
+          <input id="fName" name="name" type="text" autocomplete="name" placeholder="Alex Mercer" required />
+        </div>
+        <div class="form__row">
+          <label for="fOrg">Organization</label>
+          <input id="fOrg" name="org" type="text" autocomplete="organization" placeholder="Northwind Infrastructure" required />
+        </div>
+        <div class="form__row">
+          <label for="fEmail">Work email</label>
+          <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="alex@northwind.example" required />
+        </div>
+        <div class="form__row">
+          <label for="fInterest">Area of interest</label>
+          <select id="fInterest" name="interest">
+            <option>Network intelligence &amp; discovery</option>
+            <option>Traffic analytics</option>
+            <option>Financial infrastructure monitoring</option>
+            <option>Diagnostics &amp; fault isolation</option>
+            <option>Technical whitepaper</option>
+          </select>
+        </div>
+        <div class="form__row form__row--full">
+          <label for="fMsg">Message</label>
+          <textarea id="fMsg" name="message" rows="3" placeholder="Describe your environment and what you would want to observe."></textarea>
+        </div>
+        <button class="btn btn--primary form__submit" type="submit">Request the concept brief</button>
+        <p class="form__note mono" id="formNote">Demonstration form — nothing is transmitted or stored.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container donate">
+    <h4 class="donate__title">Donation</h4>
+    <div class="donate__box">
+      <code class="donate__addr" id="walletAddr">0x2A80C05BDA75fD665b6628eAf6Fce9894CF6699E</code>
+      <button class="donate__copy" id="copyWallet" type="button" aria-label="Copy wallet address">Copy</button>
+    </div>
+    <a class="donate__link" href="ethereum:0x2A80C05BDA75fD665b6628eAf6Fce9894CF6699E">Donate via wallet &rarr;</a>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
