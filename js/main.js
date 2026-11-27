@@ -1,5 +1,5 @@
 /* ============================================================
-   TAK LINE 16 — main.js
+   ROG BANK LINE 16 — main.js
    Vanilla JS only. No dependencies.
    01. Helpers
    02. Navigation
