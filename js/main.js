@@ -273,7 +273,7 @@
     var imgs = $$('.gallery__img', frame);
     var tabs = $$('.gallery__tab');
     var label = $('[data-gallery-label]');
-    var labels = ['THREE-QUARTER VIEW', 'FRONT ELEVATION'];
+    var labels = ['BANKING DESK SETUP', 'TERMINAL CLOSE-UP'];
 
     function show(index) {
       imgs.forEach(function (img, i) { img.classList.toggle('is-active', i === index); });
